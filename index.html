@@ -1,0 +1,4385 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | Home</title>
+  <link rel="icon" href="imajes/icon1.jpeg">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!--header بداية-->
+  <header>
+    <!--بداية العلوي header-->
+    <div class="top-header d-flex align-items-center py-2">
+      <div class="container">
+        <div class="row">
+          <!--العمود الاول logo-->
+          <div class="col-6 col-md-4">
+            <!--رابط يحوي صورة الشعار-->
+            <a href="">
+              <img class="logo" src="imajes/333549.png" alt="logo">
+            </a>
+          </div>
+
+
+          <!--العمود الثاني شريط البحث مع كلاسات من bootstrap-->
+          <div class="col-6 col-md-4 d-flex align-items-center">
+            <input type="text" class="form-control" placeholder="اكتب اسم المنتج للبحث عنه">
+          </div>
+
+
+          <!--العمود الثالث ايقونات من font awesome-->
+          <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
+            <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample ">
+              <span>السلة</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample ">
+              <span>تسجيل الدخول</span>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="">
+              <span>المفضلة</span>
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--بداية السفلي header-->
+    <div class="buttom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler  menu-icon" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+          <!--بداية div يحوي القائمة-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">اقلام فاخرة </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">اقلام معدن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">قصب</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">ورق مزخرف</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">محابر</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">مقالم و ملحقات</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!--cart-->
+  <!--نافذة منبثقة من اليسار-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row row-mini-card">
+        <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+          <p>محبرة زجاجية</p>
+          <div class="btn-group btns-mini">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+        </div>
+        <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="imajes/products/rover.jpeg" alt="صورة المنتج">
+          <p>قلم معدني</p>
+          <div class="btn-group btns-mini">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+        </div>
+        <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="imajes/brand/مقلمة.jpeg" alt="صورة المنتج">
+          <p>مقلمة</p>
+          <div class="btn-group btns-mini">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+        </div>
+        <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="imajes/products/ورق.jpeg" alt="صورة المنتج">
+          <p>ورق مزخرف</p>
+          <div class="btn-group btns-mini">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3">
+        <p class="alert alert-danger p-3 my-3 text-center">مجموع المنتجات 55$ فقط</p>
+        <button class="btn btn-primary w-100"> <a href="checkout.html">عرض السلة</a> </button>
+        <button class="btn btn-danger w-100">اتمام الطلب</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--login-->
+  <!-- نافذة منبثقة ن اليمين -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="mini-login">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">البريد الالكتروني</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3 form-field">
+            <input type="checkbox" id="exampleCheck1" class="check">
+            <label for="exampleCheck1">تذكر بياناتي</label>
+          </div>
+          <button type="submit" class="btn-solid theme-primary btn btn-primary w-100">تسجيل الدخول</button>
+        </form>
+
+        <div class="alert alert-danger my-3 text-center">
+          <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+        </div>
+        <hr>
+
+        <div class="text-center mt-5">
+          <i class="fa-solid fa-user fa-3x"></i>
+          <p>لا يوجد لديك حساب ؟</p>
+
+          <a href="" class="btn btn-danger w-100"> انشاء حساب جديد</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--header نهاية-->
+
+
+
+  <!--slider بداية-->
+
+  <div class="slider mt-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8">
+
+          <div id="main-slider" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imajes/slider1/slider1.1.jpeg" class="d-block w-100" alt="...">
+
+              </div>
+              <div class="carousel-item">
+                <img src="imajes/slider1/slider1.2.jpeg" class="d-block w-100" alt="...">
+
+              </div>
+              <div class="carousel-item">
+                <img src="imajes/slider1/slider1.3.jpeg" class="d-block w-100" alt="...">
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+          <img width="100%" src="imajes/slider2/slider2.1.jpeg" alt="">
+          <img class="mt-2" width="100%" src="imajes/slider2/slider2.2.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--slider نهاية-->
+
+
+  <!--categories بداية-->
+
+  <section class="categories">
+    <h2 class="text-center section-title">مجموعاتنا المختارة</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/فاخرة.jpeg" alt="">
+            </div>
+            <h3 class="text-center">اقلام فاخرة</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/معدن.jpeg" alt="">
+            </div>
+            <h3 class="text-center">اقلام معدنية</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/قصب.jpeg" alt="">
+            </div>
+            <h3 class="text-center">قصب </h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/محابر.jpeg" alt="">
+            </div>
+            <h3 class="text-center">محابر</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/اوراق.jpeg" alt="">
+            </div>
+            <h3 class="text-center">اوراق مزخرفة</h3>
+          </a>
+        </div>
+        <div class="col-6 col-md-2 mt-2">
+          <a href="category.html">
+            <div class="card cat overflow-hidden">
+              <img src="imajes/categories/ملحقات.jpeg" alt="">
+            </div>
+            <h3 class="text-center">ملحقات</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--categories نهاية-->
+
+  <!--products بداية-->
+
+  <section class="products">
+    <h2 class="text-center section-title">الأكثر مبيعا (اختيارات الخطاطين)</h2>
+    <div class="container-fluid">
+      <div class="btn-group mb-3 filter-button-group">
+        <button data-filter="*" type="button" class="btn btn-primary">الكل</button>
+        <button data-filter=".pens" type="button" class="btn btn-primary">قصب و اقلام </button>
+        <button data-filter=".paper" type="button" class="btn btn-primary">حبر و اوراق</button>
+      </div>
+      <div class="row row-cols-2 row-cols-md-6 all-products">
+        <div class="col product mb-2 pens">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#qasap" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/قصب.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>قصب ديسفولي</h3>
+              <p>مثالية لخط النسخ</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>4$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 paper">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#haber" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/حبر.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>حبر فاخر</h3>
+              <p>حبر اسود معتم عالي الجودة</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>9$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 paper">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#mahbara" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>محبرة و خيوط</h3>
+              <p>محبرة زجاجية محكمة الاغلاق</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>3$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 paper">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#paper" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/ورق.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>ورق مقهر</h3>
+              <p>ورق مصقول بسطح املس</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>8$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 pens">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#mashrat" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/مشرط.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>مشرط ترتيش</h3>
+              <p>مشرط ترتيش بشفرة يابانية</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>13$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 pens">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#pen" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/rover.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>قلم Rover</h3>
+              <p>قلم معدني صناعة المانية</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>7$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 pens">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#jawa" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/جاوا.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>قصب جاوا</h3>
+              <p>قصب خيزران فاخر</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>3$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 *">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#boder" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/خيوط.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>بودرة ملونة</h3>
+              <p>بودرة ملونة للزخرفة</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>2$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 pens">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#pen1" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/خطاط معدني.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>قلم معدني</h3>
+              <p>قلم خطاط معدني</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>9$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 *">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#shafrat" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/شفرات.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>شفرات ترتيش</h3>
+              <p>شفرات تبديل للترتيش</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>1$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 *">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#leka" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/ليقة.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>خيوط ليقة</h3>
+              <p>خيوط ليقة حرير صافي</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>0.5$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+        <div class="col product mb-2 *">
+          <div class="card overflow-hidden">
+            <div class="quick-icons">
+              <a href="#masnad" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""> <i class="fa-regular fa-heart"></i></a>
+              <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="imajes/products/مسند تسطير.jpeg" alt="صورة المنتج">
+            <div class="product-info">
+              <h3>مسند تسطير</h3>
+              <p>مسند تسطير خشبي</p>
+            </div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price mb-2">
+              <span>4$</span>
+            </div>
+            <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى السلة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--products نهاية-->
+
+  <!-- بداية modal products -->
+  <div class="modal fade" id="qasap" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قصب ديسفولي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/قصب.jpeg" alt="قصب ديسفولي">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/قصبة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قصب ديسفولي فاخر</h1>
+              <p class="product-description ">
+                سطحه الداخلي والخارجي أملس للغاية، مما يضمن تدفق الحبر بسلاسة دون أن يفرش على الورق
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>7$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">قصب</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- .................................................................. -->
+  <div class="modal fade" id="haber" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">حبر فاخر</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/حبر.jpeg" alt="حبر">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان حبر.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">حبر سائل فاخر</h1>
+              <p class="product-description ">
+                يتميز بقوامه الغني و ثبات لونه و سلاسة تدفقه دون تكتل مثالي للخطوط التقليدية و المعاصرة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>9$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">حبر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- .............................................................................. -->
+  <div class="modal fade" id="mahbara" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">محبرة زجاجية </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/محبرة.jpeg" alt="محبرة">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان محبرة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">محبرة زجاجية بغطاء معدني</h1>
+              <p class="product-description ">
+                تصميم كلاسيكي شفاف و متين يتيح لك رؤية مستوى الحبر بوضوح مع الحفاظ على رطوبة الحبر و منعه من الجفاف
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>3$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">محابر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- .................................................................... -->
+  <div class="modal fade" id="paper" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ورق مقهر </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/ورق.jpeg" alt="ورق">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان ورق.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">ورق مقهر عالي الجودة</h1>
+              <p class="product-description ">
+                يتميز بسطحه الأملس المعالج تقليدياً ليسمح بانسيابية القلم وحركة القصبة دون تشرب مفرط للحبر، مع إمكانية
+                التعديل والكشط بكل سهولة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>8$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">اوراق</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................ -->
+
+  <div class="modal fade" id="pen" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قلم Rover</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/rover.jpeg" alt="قلم">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان معدني.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قلم Rover الالماني</h1>
+              <p class="product-description ">
+                أناقة تقليدية تُصمم خصيصاً لتناسب يد الخطاط العصري. صُنع بعناية من معدن متين وخفيف الوزن ليوفر توازناً
+                مثالياً وثباتاً سلساً مع كل حركة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>7$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">اقلام</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="mashrat" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مشرط ترتيش</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/مشرط.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان مشرط.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مشرط ترتيش</h1>
+              <p class="product-description ">
+                مصمم خصيصاً لتهذيب ورتّش قصبة الخط العربي أو السطوح الورقية بمهارة فائقة.
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>13$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <!-- ........................................................... -->
+  <!-- ........................................................... -->
+  <!-- ........................................................... -->
+  <div class="modal fade" id="jawa" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قصب جاوا</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/جاوا.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان جاوا.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">جاوا اصلي</h1>
+              <p class="product-description ">
+                قصب خيزران جاوا ممتاز
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>3$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="pen1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قلم معدني</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/خطاط معدني.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان خطاط معدني.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قلم معدني</h1>
+              <p class="product-description ">
+                قلم خطاط معدني مقصوص بدقة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>9$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="leka" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">خيوط ليقة</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/ليقة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان ليقة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">خيوط ليقة</h1>
+              <p class="product-description ">
+                خيوط ليقة حرير صافي
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>0.5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="masnad" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مسند تسطير</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/مسند تسطير.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان مسند.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مسند</h1>
+              <p class="product-description ">
+                مسند تسطير خشبي متين
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>4$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="shafrat" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">شفرات ترتيش</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/شفرات.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان شفرات.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">شفرات ترتيش</h1>
+              <p class="product-description ">
+                شفرات غيار لقلم الترتيش
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>1$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ........................................................... -->
+  <div class="modal fade" id="boder" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">بودرة ملونة</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/products/خيوط.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/products/اعلان بودرة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">بودرة ملونة</h1>
+              <p class="product-description ">
+                بودرة ملونة تستخدم للزخرفة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>2$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- نهاية modal products -->
+
+  <!--new-products بداية  -->
+  <section class="new-products">
+    <div class="container-fluid">
+      <h2 class="text-center section-title">احدث المنتجات</h2>
+
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#maklama" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/مقلمة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مقلمة جلدية</h3>
+                <p>مقلمة جلدية صناعة فاخرة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#segada" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/سجادة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>سجادة قماشية</h3>
+                <p>سجادة قماشية لمنع تعرق الورقة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>0.5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#korasa" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/كراسة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>كراسة الخط الديواني</h3>
+                <p>الخط الديواني البغدادي</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>10$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#hand" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/كف.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>كف جلدية</h3>
+                <p>كف جلدي راحة في الكتابة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>2$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#mastara" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/مسطرة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مسطرة الخطاطين</h3>
+                <p>مسطرة لضبط ابعاد اللوحة بدقة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>2.5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#stypen" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/stypen.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>قلم stypen</h3>
+                <p>قلم stypen فاخر صناعة فرنسية</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>6$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product1 mb-2 pens swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#group" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/brand/مجموعة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مجموعة رؤوس</h3>
+                <p>مجموعة فاخرة بثمانية رؤوس</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>18$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div>
+        </div> -->
+      </div>
+    </div>
+
+  </section>
+  <!--new-products نهاية-->
+
+  <!-- بداية modal new product -->
+  <div class="modal fade" id="maklama" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مقلمة جلدية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/مقلمة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان مقلمة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مقلمة جلدية</h1>
+              <p class="product-description ">
+                مقلمة جلدية صناعة سورية
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ************************************************************ -->
+  <div class="modal fade" id="segada" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">سجادة قماشية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/سجادة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان سجادة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">سجادة قماشية </h1>
+              <p class="product-description ">
+                سجادة قماشية تمنع وصول العرق الى لورقة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>0.5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ************************************************************** -->
+  <div class="modal fade" id="korasa" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">كراسة ديواني</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/كراسة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان كراسة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">كراسة ديواني</h1>
+              <p class="product-description ">
+                كراسة الخط الديواني البغدادي
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>10$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ************************************************************** -->
+  <div class="modal fade" id="hand" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">كف جلدي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/كف.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان كف.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">كف جلدي</h1>
+              <p class="product-description ">
+                كف جلدي باحجام متعددة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>2$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ************************************************************** -->
+  <div class="modal fade" id="mastara" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مسطرة الخطاطين</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/مسطرة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان مسطرة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3"> مسطرة الخطاطين</h1>
+              <p class="product-description ">
+                مسطرة متينة مناسبة لجميع المستويات
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>2.5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************************************************** -->
+  <div class="modal fade" id="stypen" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قلم stypen</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/stypen.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان stypen.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قلم stypen</h1>
+              <p class="product-description ">
+                قلم صناعة فرنسية
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>6$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ************************************************************** -->
+  <div class="modal fade" id="group" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مجموعة رؤوس</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/brand/مجموعة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/brand/اعلان مجموعة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مجموعة رؤوس</h1>
+              <p class="product-description ">
+                قلم فاخر مع ثمانية رؤوس
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>6$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات :</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- نهاية modal new product -->
+
+
+
+  <!-- بداية قسم منتجات خاصة -->
+
+  <div class="container-fluid pt-5">
+
+    <ul class="nav nav-tabs">
+
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#new">الاحدث</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#all">ملحقات</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#made">صناعة يدوية</a>
+      </li>
+
+
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane fade mt-5 show active" id="new">
+
+        <div class="row row-cols-2 row-cols-md-6">
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#bele" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/بيلي.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>قصب بيلي فاخر</h3>
+                <p>مناسب لجميع الخطوط</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#arab" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/حبر عربي.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>حبر عربي</h3>
+                <p>انسيابية و سلاسة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>3$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#book" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/دفتر.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>دفتر تدريب</h3>
+                <p>لجميع المستويات</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>4$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#color" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/ليقة ملونة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>خيوط ليقة</h3>
+                <p> خيوط حرير ملونة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>4$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#heads" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/مجموعة معدنية.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مجموعة معدنية</h3>
+                <p>قلم معدني بعدة رؤوس</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>22$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#water" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/محبرة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>محبرة زجاجية</h3>
+                <p>محبرة حديثة محكمة الاغلاق</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>1.5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- ---------------------------------- -->
+
+      <div class="tab-pane fade mt-5" id="all">
+        <div class="row row-cols-2 row-cols-md-6">
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#katara" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/قطارة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>قطارة</h3>
+                <p>لضبط مستوى الحبر بدقة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>1$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#yad" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/كف.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>كف قماشي</h3>
+                <p>كف لحماية الورقة </p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>1.5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#satr" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/مسطرة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مسطرة دقيقة</h3>
+                <p>مسطرة لضبط السطر</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>2$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#stanles" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/مسند ستانلس.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مسند للاقلام</h3>
+                <p>مسند ستانلس للاقلام </p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>\5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#write" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/مسند.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مسند</h3>
+                <p>مسند مناسب للكتابة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>1$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#mehfaza" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/accessories/مقلمة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مقلمة جلدية</h3>
+                <p>مقلمة كبيرة السعة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>5$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade mt-5" id="made">
+        <div class="row row-cols-2 row-cols-md-6">
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#paint" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/لوحة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>لوحة خشبية</h3>
+                <p>لوحة خشبية مفرغة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>10$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#save" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/مقلمة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>مقلمة موزاييك </h3>
+                <p>مصنوعة يدويا و مزخرفة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>12$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#mah" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/محبرة.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>محبرة خشبية</h3>
+                <p>محبرة خشبية مزخرفة</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>6$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#pap" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/ورق.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>ورق مقهر</h3>
+                <p>صناعة يدوية حرفية</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>7$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#jaw" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/جاوا.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>قصب جاوا</h3>
+                <p>جاوا مقصوص يدويا</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>3$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+          <div class="col product mb-2 pens">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#hab" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+                <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+              </div>
+              <img src="imajes/private/hand/حبر.jpeg" alt="صورة المنتج">
+              <div class="product-info">
+                <h3>حبر مستخلص</h3>
+                <p>حبر مستخلص من الاعشاب</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price mb-2">
+                <span>6$</span>
+              </div>
+              <button onclick="alert('تم اضافة المنتج للسلة بنجاح')" class="btn btn-danger w-100">اضافة الى
+                السلة</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- نهاية قسم منتجات خاصة -->
+
+  <!-- بداية modal فئة الاحدث -->
+
+  <div class="modal fade" id="bele" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قصب بيلي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/بيلي.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/بيلي.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قصب بيلي</h1>
+              <p class="product-description ">
+                قصب بيلي فاخر مقصوص بدقة فائقة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>3$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">قصب</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="arab" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">حبر عربي فاخر</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/حبر عربي.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/حبر.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">حبر عربي</h1>
+              <p class="product-description ">
+                حبر سلس مناسب لجميع انواع الاوراق
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>3$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">حبر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="book" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">دفتر تدريب</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/دفتر.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/دفتر.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">دفتر تدريب</h1>
+              <p class="product-description ">
+                دفتر تدريب ورق غلاسيه
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>4$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">اوراق</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="heads" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مجموعة رؤوس معدنية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/مجموعة معدنية.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/مجموعة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مجموعة رؤوس معدنية</h1>
+              <p class="product-description ">
+                قلم معدني مع ثمانية رؤوس معدنية مناسبة لجميع الخطوط
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>22$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">اقلام</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="color" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">خيوط ليقة ملونة</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/ليقة ملونة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/ليقة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">خيوط ليقة ملونة</h1>
+              <p class="product-description ">
+                خيوط ليقة حرير ملونة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>4$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">حبر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="water" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">محبرة زجاجية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/محبرة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/new modal/" alt="">
+              <h1 class="modal-title fs-5 my-3">محبرة زجاجية</h1>
+              <p class="product-description ">
+                محبرة زجاجية انيقة و مناسبة للحمل في الجيب او الحقيبة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>1.5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">حبر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- نهاية modal فئة الاحدث -->
+
+  <!-- بداية modal فئة ملحقات -->
+
+  <!-- ********************************************** -->
+  <div class="modal fade" id="katara" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قطارة زجاجية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/قطارة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/قطارة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قطارة زجاجية</h1>
+              <p class="product-description ">
+                قطارة زجاجية لضبط مستوى الحبر
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>1$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="yad" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">كف قماشي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/كف.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/كف.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">كف قماشي</h1>
+              <p class="product-description ">
+                كف قماشي لحماية الورقة من الحبر
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>1.5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="satr" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مسطرة</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/مسطرة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/مسطرة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مسطرة خشبية</h1>
+              <p class="product-description ">
+                مسطرة خشبية دقيقة جدا
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>2$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="stanles" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مسند اقلام معدن</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/مسند ستانلس.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/مسند قلم.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مسند اقلام معدن</h1>
+              <p class="product-description ">
+                مسند اقلام ستانلس متين ذو جمالية عالية في المكتب
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="write" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مسند خشبي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/مسند.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/مسند.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مسند خشبي</h1>
+              <p class="product-description ">
+                مسند خشبي للكتابة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>1$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ********************************************** -->
+  <div class="modal fade" id="mehfaza" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مقلمة جلدية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/accessories/مقلمة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/accessories modal/مقلمة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مقلمة جلدية</h1>
+              <p class="product-description ">
+                مقلمة جلدية تتسع لعدد كبير من الاقلام
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>5$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- نهاية modal فئة ملحقات -->
+
+  <!-- بداية modal يدوية -->
+
+  <!-- ********************************************** -->
+  <div class="modal fade" id="paint" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">لوحة مخطوطة</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/لوحة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/لوحة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">لوحة</h1>
+              <p class="product-description ">
+                لوحة ذات اطالا خشبي فاخر
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>10$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- ********************************************** -->
+  <div class="modal fade" id="save" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">مقلمة موزاييك</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/مقلمة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/موزاييك.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">مقلمة موزاييك</h1>
+              <p class="product-description ">
+                مقلمة موزاييك مزخرفة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>12$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- ********************************************** -->
+  <div class="modal fade" id="mشا" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">محبرة خشبية</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/محبرة.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/محبرة.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">محبرة خشبية</h1>
+              <p class="product-description ">
+                محبرة خشبية مع خيوط مناسبة لكمية الحبر
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>6$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- ********************************************** -->
+  <div class="modal fade" id="pap" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ورق مقهر</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/ورق.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/ورق.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">ورق مقهر</h1>
+              <p class="product-description ">
+                ورق مقهر مصقول بايادي خبيرة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>7$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">ملحقات</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- ********************************************** -->
+  <div class="modal fade" id="jaw" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">قصب جاوا</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/جاوا.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/جاوا.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">قصب جاوا</h1>
+              <p class="product-description ">
+                قصب جاوا مقصوص بدقة
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>3$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">قصب</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- ********************************************** -->
+  <div class="modal fade" id="hap" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">حبر طبيعي</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img class="img-fluid img-im1" src="imajes/private/hand/حبر.jpeg" alt="ملحقات">
+              <button class="btn btn-primary w-100 mt-2">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img width="100%" class="mt-3" src="imajes/private/hand modal/حبر.jpeg" alt="">
+              <h1 class="modal-title fs-5 my-3">حبر طبيعي</h1>
+              <p class="product-description ">
+                حبر مستخلص من طبيعة الاعشاب
+              </p>
+              <div class="quick-reviews mb-3">
+                <span>تقييمات المستخدمين :</span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="price mb-3">
+                <span>6$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+
+
+                <div class="d-flex gap-1 add-btn">
+                  <button class="btn btn-danger ">اضافة الى السلة</button>
+                  <button class="btn btn-success">شراء الان</button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="gategoty mb-3">
+                <span>التصنيفات:</span>
+                <a href="">حبر</a>
+              </div>
+
+              <div class="share">
+                <span>المشاركة</span>
+                <div class="share-icons d-inline-flex gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- نهاية modal يدوية -->
+
+  <!-- بداية بطاقة عرض منتج  -->
+
+  <section class="ads">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 gap-3 flex-md-nowrap m-2">
+        <div class="col ad position-relative d-flex justify-content-center overflow-hidden  ">
+          <div class="overlay"></div>
+          <img class="img-fluid" src="imajes/icon1.jpeg" alt="صورة الاعلان">
+          <div class="ad-info">
+            <h3>معلومات الاعلان</h3>
+            <p>وصف</p>
+            <button class="btn btn-danger">تسوق الان</button>
+          </div>
+        </div>
+        <div class="col ad position-relative d-flex justify-content-center overflow-hidden  ">
+          <div class="overlay"></div>
+          <img class="img-fluid" src="imajes/icon1.jpeg" alt="صورة الاعلان">
+          <div class="ad-info">
+            <h3>معلومات الاعلان</h3>
+            <p>وصف</p>
+            <button class="btn btn-danger">تسوق الان</button>
+          </div>
+        </div>
+        <div class="col ad position-relative d-flex justify-content-center overflow-hidden  ">
+          <div class="overlay"></div>
+          <img class="img-fluid" src="imajes/icon1.jpeg" alt="صورة الاعلان">
+          <div class="ad-info">
+            <h3>معلومات الاعلان</h3>
+            <p>وصف</p>
+            <button class="btn btn-danger">تسوق الان</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نهاية بطاقة عرض منتج -->
+
+
+
+
+  <!-- start week end products -->
+
+  <section class="week-products">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col">
+          <h4 class="mini-title">نوادر و مقتنيات</h4>
+
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/محبرة.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>محبرة خشبية محفوظة </p>
+                  <p>2$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/مسند.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>مسند يدوي</p>
+                  <p>3$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/مقلمة.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>محفظة جلدية</p>
+                  <p>5$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <h4 class="mini-title">اطقم و مجموعات</h4>
+
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/ديواني.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>حقيبة الخط الديواني</p>
+                  <p>25$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/اطفال.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>صندوق خطاط المستقبل</p>
+                  <p>20$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/ترميم.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>طقم ترميم اللوحات</p>
+                  <p>15$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <h4 class="mini-title">المطبوعات و الكراسات</h4>
+
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/كراسة.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>كراسة محمد عزت</p>
+                  <p>10$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/مساطر.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>مساطر النقطة</p>
+                  <p>7$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/دفاتر.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>دفاتر مسطرة</p>
+                  <p>9$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <h4 class="mini-title">العرض و الاخراج الفني</h4>
+
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/شريط.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>شريط لاصق</p>
+                  <p>2$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/اطارات.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>اطارات زوايا حماية</p>
+                  <p>8$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="product.html">
+              <div class="product-small d-flex align-items-center">
+                <img class="img-fluid w-25%" src="imajes/sections/اختام.jpeg" alt="صورة المنتج">
+                <div class="product-info">
+                  <p>اختام نحاسية</p>
+                  <p>18$</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end week end products -->
+
+  <!-- start footer -->
+
+  <footer>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col first-f">
+          <img class="logo" src="imajes/333549.png" alt="logo">
+          <p class="text-white">
+            متجر متخصص في توفير كافة أدوات ومستلزمات الخط العربي والفنون الكلاسيكية، نهدف لدعم الفنانين والخطاطين بأعلى
+            جودة.
+          </p>
+          <ul class="navbar-nav text-white">
+            <li><i class="fa-solid fa-location-dot"> </i>سوريا , حماة</li>
+            <li><i class="fa-solid fa-phone"> </i>0937611056</li>
+            <li><i class="fa-solid fa-envelope"> </i>khaledalmurey34@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="col second-f">
+          <h3>اهم الروابط</h3>
+          <ul class="nav-navbar">
+            <li><a href="">الرئيسية</a></li>
+            <li><a href="">من نحن</a></li>
+            <li><a href="">منتجاتنا</a></li>
+            <li><a href="">سياسة الخصوصية</a></li>
+            <li><a href="">الشروط و الاحكام</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col third-f">
+          <h3>التصنيفات</h3>
+          <ul class="nav-navbar">
+            <li><a href="">اقلام فاخرة</a></li>
+            <li><a href="">اقلام معدنية</a></li>
+            <li><a href="">قصب</a></li>
+            <li><a href="">محابر</a></li>
+            <li><a href="">ملحقات</a></li>
+          </ul>
+        </div>
+
+        <div class="col forth-f">
+          <h3>النشرة البريدية</h3>
+          <p>اشترك معنا ليصلك كل جديد عن العروض والمنتجات والأدوات الحديثة</p>
+          <form action="">
+            <input type="text" placeholder="البريد الالكتروني" class="form-contral mb-3 w-100">
+            <button class="btn btn-primary w-100">اشتراك</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col pay">
+          <img src="imajes/دفع.jpeg" alt="صورة تجمع وسائل الدفع">
+        </div>
+
+        <div class="col">
+          <p class="text-white text-center">كافة متطلبات الابداع في الخط العربي 2025 جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

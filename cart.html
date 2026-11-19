@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="icon" href="imajes/icon1.jpeg">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <!--بداية العلوي header-->
+        <div class="top-header d-flex align-items-center py-2">
+            <div class="container">
+                <div class="row">
+                    <!--العمود الاول logo-->
+                    <div class="col-6 col-md-4">
+                        <!--رابط يحوي صورة الشعار-->
+                        <a href="">
+                            <img class="logo" src="imajes/333549.png" alt="logo">
+                        </a>
+                    </div>
+
+
+                    <!--العمود الثاني شريط البحث مع كلاسات من bootstrap-->
+                    <div class="col-6 col-md-4 d-flex align-items-center">
+                        <input type="text" class="form-control" placeholder="اكتب اسم المنتج للبحث عنه">
+                    </div>
+
+
+                    <!--العمود الثالث ايقونات من font awesome-->
+                    <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample ">
+                            <span>السلة</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample ">
+                            <span>تسجيل الدخول</span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="">
+                            <span>المفضلة</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--بداية السفلي header-->
+        <div class="buttom-header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler  menu-icon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                    <!--بداية div يحوي القائمة-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">اقلام فاخرة </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">اقلام معدن</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">قصب</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">ورق مزخرف</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">محابر</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">مقالم و ملحقات</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="bunner">
+        <h1 class="cat-title"> سلة المشتريات</h1>
+    </section>
+
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="row row-mini-card ">
+
+                        <div class="col-12 col mini-card d-flex justify-content-between align-items-center px-3">
+                            <div class="cart-title ">
+                                المنتج
+                            </div>
+
+                            <p class="cart-title ">السعر</p>
+
+                            <div class="cart-title ">
+                                الكمية
+                            </div>
+                            <p class="cart-title ">الاجمالي</p>
+                        </div>
+
+
+                        <div class="col-12 col mini-card d-flex justify-content-between align-items-center px-3">
+                            <div class="d-flex flex-column gap-2 justify-content-between ">
+                                <img class="img-fluid " width="60px" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+                                <p>محبرة زجاجية</p>
+                            </div>
+
+                            <p>20$</p>
+
+                            <div class="btn-group btns-mini">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn ">-</button>
+                            </div>
+                            <p>40$</p>
+                        </div>
+                        <div class="col-12 col mini-card d-flex justify-content-between align-items-center px-3">
+                            <div class="d-flex flex-column gap-2 justify-content-between ">
+                                <img class="img-fluid " width="60px" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+                                <p>محبرة زجاجية</p>
+                            </div>
+
+                            <p>20$</p>
+
+                            <div class="btn-group btns-mini">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn ">-</button>
+                            </div>
+                            <p>40$</p>
+                        </div>
+                        <div class="col-12 col mini-card d-flex justify-content-between align-items-center px-3">
+                            <div class="d-flex flex-column gap-2 justify-content-between ">
+                                <img class="img-fluid " width="60px" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+                                <p>محبرة زجاجية</p>
+                            </div>
+
+                            <p>20$</p>
+
+                            <div class="btn-group btns-mini">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn ">-</button>
+                            </div>
+                            <p>40$</p>
+                        </div>
+                        <div class="col-12 col mini-card d-flex justify-content-between align-items-center px-3">
+                            <div class="d-flex flex-column gap-2 justify-content-between ">
+                                <img class="img-fluid " width="60px" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+                                <p>محبرة زجاجية</p>
+                            </div>
+
+                            <p>20$</p>
+
+                            <div class="btn-group btns-mini">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn ">-</button>
+                            </div>
+                            <p>40$</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="code d-flex mt-5 gap-3 ">
+                        <input type="text" class="form-control ">
+                        <button class="btn btn-primary ">تطبيق الخصم</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summery">
+                    <h4 class="cart-title mb-3">ملخص سلة المشتريات</h4>
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>المجموع</p>
+                        <p>120$</p>
+                    </div>
+                  
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>قيمة الخصم</p>
+                        <p>120$</p>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>الاجمالي</p>
+                        <p>120$</p>
+                    </div>
+                    
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary">العودة للمتجر</button>
+                    <button class="btn btn-danger">اتمام الطلب</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col first-f">
+                    <img class="logo" src="imajes/333549.png" alt="logo">
+                    <p class="text-white">
+                        متجر متخصص في توفير كافة أدوات ومستلزمات الخط العربي والفنون الكلاسيكية، نهدف لدعم الفنانين
+                        والخطاطين بأعلى جودة.
+                    </p>
+                    <ul class="navbar-nav text-white">
+                        <li><i class="fa-solid fa-location-dot"> </i>سوريا , حماة</li>
+                        <li><i class="fa-solid fa-phone"> </i>0937611056</li>
+                        <li><i class="fa-solid fa-envelope"> </i>khaledalmurey34@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="col second-f">
+                    <h3>اهم الروابط</h3>
+                    <ul class="nav-navbar">
+                        <li><a href="">الرئيسية</a></li>
+                        <li><a href="">من نحن</a></li>
+                        <li><a href="">منتجاتنا</a></li>
+                        <li><a href="">سياسة الخصوصية</a></li>
+                        <li><a href="">الشروط و الاحكام</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col third-f">
+                    <h3>التصنيفات</h3>
+                    <ul class="nav-navbar">
+                        <li><a href="">اقلام فاخرة</a></li>
+                        <li><a href="">اقلام معدنية</a></li>
+                        <li><a href="">قصب</a></li>
+                        <li><a href="">محابر</a></li>
+                        <li><a href="">ملحقات</a></li>
+                    </ul>
+                </div>
+
+                <div class="col forth-f">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك معنا ليصلك كل جديد عن العروض والمنتجات والأدوات الحديثة</p>
+                    <form action="">
+                        <input type="text" placeholder="البريد الالكتروني" class="form-contral mb-3 w-100">
+                        <button class="btn btn-primary w-100">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 mt-3">
+                <div class="col pay">
+                    <img src="imajes/دفع.jpeg" alt="صورة تجمع وسائل الدفع">
+                </div>
+
+                <div class="col">
+                    <p class="text-white text-center">كافة متطلبات الابداع في الخط العربي 2025 جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--cart-->
+    <!--نافذة منبثقة من اليسار-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row row-mini-card">
+                <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imajes/products/محبرة.jpeg" alt="صورة المنتج">
+                    <p>محبرة زجاجية</p>
+                    <div class="btn-group btns-mini">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn ">-</button>
+                    </div>
+                </div>
+                <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imajes/products/rover.jpeg" alt="صورة المنتج">
+                    <p>قلم معدني</p>
+                    <div class="btn-group btns-mini">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn ">-</button>
+                    </div>
+                </div>
+                <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imajes/brand/مقلمة.jpeg" alt="صورة المنتج">
+                    <p>مقلمة</p>
+                    <div class="btn-group btns-mini">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn ">-</button>
+                    </div>
+                </div>
+                <div class="col-12 col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imajes/products/ورق.jpeg" alt="صورة المنتج">
+                    <p>ورق مزخرف</p>
+                    <div class="btn-group btns-mini">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn ">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+                <p class="alert alert-danger p-3 my-3 text-center">مجموع المنتجات 55$ فقط</p>
+                <button class="btn btn-primary w-100">عرض السلة</button>
+                <button class="btn btn-danger w-100">اتمام الطلب</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--login-->
+    <!-- نافذة منبثقة ن اليمين -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mini-login">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الالكتروني</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-field">
+                        <input type="checkbox" id="exampleCheck1" class="check">
+                        <label for="exampleCheck1">تذكر بياناتي</label>
+                    </div>
+                    <button type="submit" class="btn-solid theme-primary btn btn-primary w-100">تسجيل الدخول</button>
+                </form>
+
+                <div class="alert alert-danger my-3 text-center">
+                    <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+                </div>
+                <hr>
+
+                <div class="text-center mt-5">
+                    <i class="fa-solid fa-user fa-3x"></i>
+                    <p>لا يوجد لديك حساب ؟</p>
+
+                    <a href="" class="btn btn-danger w-100"> انشاء حساب جديد</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+
+
+:root {
+    /* اللون الرئيسي - عنابي كلاسيكي (للـ Navbar والروابط والأزرار الرئيسية) */
+    --primary-color: #6B1212;
+
+    /* اللون الثانوي - ذهبي دافئ (للتأثيرات، النجوم، والشارات) */
+    --secondary-color: #C5A880;
+
+    /* لون التفاعل - عنابي داكن (يعمل عند التمرير Hover على الأزرار) */
+    --hover-color: #4A0C0C;
+
+    /* خلفية الموقع - أوف وايت/ورقي (تمنح شعور المخطوطات والورق المقهر) */
+    --bg-light: #FAF8F5;
+
+    /* خلفية الكروت والعناصر - أبيض ناصع (لإبراز المنتجات) */
+    --bg-card: #FFFFFF;
+
+    /* لون النصوص الأساسية - رمادي غامق/فحمي (لراحة العين أثناء القراءة) */
+    --text-dark: #2B2B2B;
+
+    /* لون النصوص الثانوية - رمادي متوسط (للملاحظات والتفاصيل الفرعية) */
+    --text-muted: #6C757D;
+
+    /* لون الحدود والتفاصيل الدقيقة */
+    --border-color: #E0DACE;
+}
+
+body {
+    font-family: cairo !important;
+
+}
+
+/* تنسيق عام للروابط */
+a {
+    text-decoration: none !important;
+    color: var(--secondary-color) !important;
+}
+
+/* تنسيق الشريط العلوي */
+.top-header {
+    background-color: var(--primary-color);
+
+}
+
+/* ارتفاع لصورة الشعار */
+.top-header .col-md-4 .logo {
+    height: 50px;
+}
+
+/* تنسيق الروابط في الشريط العلوي */
+.left-header a {
+    margin-left: 20px;
+    border-right: 1px solid var(--secondary-color);
+    padding-right: 15px;
+    transition: all 0.3s;
+}
+
+.left-header a:hover {
+    color: var(--bg-card) !important;
+}
+
+.menu-icon {
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    font-weight: bold !important;
+}
+
+.buttom-header {
+    box-shadow: 3px 3px 3px var(--text-muted);
+}
+
+.categories {
+    margin-top: 50px;
+}
+
+.cat img {
+    transition: all 0.3s;
+}
+
+.cat:hover img {
+    scale: 1.1;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-family: almarai;
+    font-weight: bold;
+}
+
+.products {
+    margin-top: 70px;
+}
+
+
+
+
+.product-info {
+    padding: 10px;
+}
+
+
+
+
+.product-info h3 {
+    font-family: almarai;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.product-info p {
+    font-size: 14px;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.price {
+    color: var(--text-muted);
+    font-weight: bold;
+}
+
+.quick-icons {
+    position: absolute;
+    background-color: var(--bg-light);
+    right: -45px;
+    top: 15px;
+    height: 150px;
+    width: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.quick-icons i {
+    font-size: 18px;
+}
+
+.card:hover .quick-icons {
+    right: 0px;
+}
+
+.new-products {
+
+    padding-top: 70px;
+}
+
+.img-im1 {
+    height: 90% !important;
+}
+
+.btns-quantity button {
+    border: 1px solid #eee;
+}
+
+.btns-quantity button:hover {
+    border: 1px solid #ccc;
+}
+
+.btns-quantity button:active {
+    border: 1px solid #ccc !important;
+}
+
+.add-btn button {
+    font-size: 14px !important;
+}
+
+.new-products .product {
+    height: 70% !important;
+}
+
+.product1 {
+
+    height: 75% !important;
+}
+
+.mini-card {
+    background-color: #eee;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.mini-card img {
+    border-radius: 10px;
+}
+
+.btns-mini button {
+    background-color: white !important;
+    border: 1px solid #ccc;
+}
+
+.btns-mini button:hover {
+    border: 1px solid #ccc;
+}
+
+
+.row-mini-card {
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--primary-color);
+}
+
+
+.mini-login {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.week-products {
+
+    padding-top: 50px;
+}
+
+.product-small {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px dashed #9997978a;
+    overflow: hidden !important;
+
+}
+
+.product-small img {
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+. .product-small:hover img {
+    rotate: 10deg;
+}
+
+.product-small .product-info :first-child {
+    font-weight: bold;
+}
+
+.product-small .product-info :last-child {
+    color: red;
+    font-weight: bold;
+}
+
+.mini-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.ads {
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.ad .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.464);
+    z-index: 100 !important;
+}
+
+.ad {
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+
+.ad img {
+    transition: 0.3s;
+}
+
+.ad:hover img {
+    scale: 1.1;
+}
+
+.ad .ad-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 101 !important;
+}
+
+.ad .ad-info h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Almarai !important;
+}
+
+.ad .ad-info p {
+    color: white;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+footer .logo {
+    width: 50%;
+}
+
+footer h3 {
+    color: white;
+    font-family: Almarai;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a {
+    color: rgb(150, 150, 150) !important;
+}
+
+.forth-f p {
+    color: rgb(150, 150, 150) !important;
+}
+
+.img-slider {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 15px;
+    border: 1px dashed var(--primary-color) !important;
+}
+
+.carousel-images {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: -130px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Almarai;
+}
+
+.review-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.product-small img {
+    width: 25% !important;
+}
+
+.pay img {
+    width: 30%;
+}
+
+.bunner {
+background-color: var(--secondary-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--border-color) ;
+}
+
+.cat-title {
+    color: var(--primary-color);
+    font-family: almarai;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.filter-section {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-title {
+    color: var(--primary-color);
+    font-family: almarai;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+
+.cart-title {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+
+.summery {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.cart-item {
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 15px;
+}
+
+
+.user-info {
+    background-color: #eeeeee53;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.master-card {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
